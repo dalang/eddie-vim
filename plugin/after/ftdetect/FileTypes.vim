@@ -25,3 +25,7 @@ autocmd! BufNewFile,BufRead nginx.conf set filetype=nginx
 
 " CocoaPods
 autocmd! BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
+
+" Markdown
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.md  set filetype=markdown
+

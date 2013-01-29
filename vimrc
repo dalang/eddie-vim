@@ -17,3 +17,9 @@ noremap <CR> :nohlsearch<CR>
 
 " select ALL
 map <C-A> ggVG
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! %!sudo tee > /dev/null %
+command -nargs=? Sudow :w !sudo tee %
+
+
