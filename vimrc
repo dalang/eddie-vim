@@ -22,4 +22,7 @@ map <C-A> ggVG
 cmap w!! %!sudo tee > /dev/null %
 command -nargs=? Sudow :w !sudo tee %
 
-
+"let delimitMate_autoclose = 0
+let delimitMate_offByDefault = 1
+set titleold=Terminal
+set mouse=a
