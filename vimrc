@@ -26,4 +26,8 @@ autocmd BufReadPost *
             \ if line("'\"")>0&&line("'\"")<=line("$") |
             \ exe "normal g'\"" |
             \ endif
+
+"let delimitMate_autoclose = 0
+let delimitMate_offByDefault = 1
 set titleold=Terminal
+set mouse=a
