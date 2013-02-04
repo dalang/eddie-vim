@@ -22,4 +22,8 @@ map <C-A> ggVG
 cmap w!! %!sudo tee > /dev/null %
 command -nargs=? Sudow :w !sudo tee %
 
-
+autocmd BufReadPost *
+            \ if line("'\"")>0&&line("'\"")<=line("$") |
+            \ exe "normal g'\"" |
+            \ endif
+set titleold=Terminal
