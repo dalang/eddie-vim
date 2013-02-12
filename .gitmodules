@@ -115,3 +115,9 @@
 [submodule "bundle/jslint.vim"]
 	path = bundle/jslint.vim
 	url = git://github.com/kaochenlong/jslint.vim.git
+[submodule "eddie-vim"]
+	path = eddie-vim
+	url = https://github.com/dalang/eddie-vim.git
+[submodule "bundle/vim-insant-markdown"]
+	path = bundle/vim-insant-markdown
+	url = https://github.com/suan/vim-instant-markdown.git
