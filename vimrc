@@ -44,3 +44,4 @@ set history=1000
 let delimitMate_offByDefault = 1
 set titleold=Terminal
 set mouse=a
+imap <C-A> &#12288;&#12288;<CR>

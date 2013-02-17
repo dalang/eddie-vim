@@ -28,7 +28,7 @@ set wildmode=longest,list             " use emacs-style tab completion when sele
 set wildmenu                          " make tab completion for files/buffers act like bash
 set key=			                        " disable encryption
 set synmaxcol=128
-set viminfo=			                    " disable .viminfo file
+"set viminfo=			                    " disable .viminfo file
 set ttyfast                           " send more chars while redrawing
 
 filetype on                           " enable filetype detection
