@@ -43,5 +43,12 @@ set history=1000
 " let delimitMate_autoclose = 0
 let delimitMate_offByDefault = 1
 set titleold=Terminal
-set mouse=a
+if has("mouse")
+    set mouse=a
+endif
 imap <C-A> &#12288;&#12288;<CR>
+
+autocmd WinEnter,FileType c,cpp,java        colorscheme slate
+
+vmap "+y :w !pbcopy<CR><CR>
+nmap "+p :r !pbpaste<CR><CR>

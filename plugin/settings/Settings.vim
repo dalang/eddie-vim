@@ -46,7 +46,7 @@ catch
 endtry
 
 set nobackup                          " no *~ backup files
-set noswapfile
+"set noswapfile
 set nowritebackup
 set copyindent                        " copy the previous indentation on autoindenting
 set ignorecase                        " ignore case when searching
