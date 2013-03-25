@@ -8,6 +8,7 @@ This vim setting forks from [eddie-vim](https://github.com/kaochenlong/eddie-vim
 4. `let delimitMate_offByDefault = 1`. It will disable auto complete " [ and so on symbols at start vim , and we can use :DelimitMateSwitch to enable or disable auto complete.
 5. `set titleold=Terminal`, so replace the annoying 'Thanks for flying vim' with 'Terminal' when exit vi
 6. enable mouse
+7. set *.md with markdown filetype
 
 ------------------------------------------------------------------------
 
