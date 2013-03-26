@@ -48,10 +48,10 @@ if has("mouse")
 endif
 imap <C-A> &#12288;&#12288;<CR>
 
-if has('win32')
-elseif has('unix')
-    autocmd WinEnter,FileType c,cpp,java        colorscheme torte
-elseif has('mac')
+let os = substitute(system('uname'), "\n", "", "")
+if has("win32")
+    autocmd WinEnter,FileType c,cpp,java        colorscheme desert
+elseif os == "Darwin"
     autocmd WinEnter,FileType c,cpp,java        colorscheme slate
     vmap "+y :w !pbcopy<CR><CR>
     nmap "+p :r !pbpaste<CR><CR>
@@ -63,6 +63,7 @@ elseif has('mac')
     " ctrl-v for paste
     nmap <C-v> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
     imap <C-v> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-
-endi
+elseif os == "Linux"
+    autocmd WinEnter,FileType c,cpp,java        colorscheme torte
+endif
 
