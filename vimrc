@@ -48,7 +48,13 @@ if has("mouse")
 endif
 imap <C-A> &#12288;&#12288;<CR>
 
-autocmd WinEnter,FileType c,cpp,java        colorscheme slate
+if has('win32')
+elseif has('unix')
+    autocmd WinEnter,FileType c,cpp,java        colorscheme torte
+elseif has('mac')
+    autocmd WinEnter,FileType c,cpp,java        colorscheme slate
+    vmap "+y :w !pbcopy<CR><CR>
+    nmap "+p :r !pbpaste<CR><CR>
+endi
 
-vmap "+y :w !pbcopy<CR><CR>
-nmap "+p :r !pbpaste<CR><CR>
+
