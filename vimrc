@@ -52,3 +52,11 @@ autocmd WinEnter,FileType c,cpp,java        colorscheme slate
 
 vmap "+y :w !pbcopy<CR><CR>
 nmap "+p :r !pbpaste<CR><CR>
+
+" ctrl-x for cut
+vmap <C-x> :!pbcopy<cr>
+" ctrl-c for copy
+vmap <C-c> :w !pbcopy<cr><cr>
+" ctrl-v for paste
+nmap <C-v> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+imap <C-v> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
