@@ -56,6 +56,7 @@ set expandtab                         " replace <TAB> with spaces
 set softtabstop=4
 set shiftwidth=4
 set tabstop=4
+autocmd FileType ruby set softtabstop=2|set tabstop=2|set shiftwidth=2
 set shortmess=Ia                      " remove splash wording
 
 " disable sound on errors
