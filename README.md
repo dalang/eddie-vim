@@ -2,13 +2,15 @@
 This vim setting forks from [eddie-vim](https://github.com/kaochenlong/eddie-vim), I just make a bit changes for my custom usage.
 
 ##Changes
-1. tab expand with 4 space
+1. ~~tab expand with 4 space~~ set default tab expand with 4 spaces, but ruby file with 2 spaces.
 2. remember last editing position and goto there when reopen
 3. `cmap w!! %!sudo tee > /dev/null %` and `Sudow to :w !sudo tee %`, for I always forget to prefix sudo to vi when edit system file
-4. `let delimitMate_offByDefault = 1`. It will disable auto complete " [ and so on symbols at start vim , and we can use :DelimitMateSwitch to enable or disable auto complete.
+4. ~~`let delimitMate_offByDefault = 1`. It will disable auto complete " [ and so on symbols at start vim , and we can use :DelimitMateSwitch to enable or disable auto complete.~~
 5. `set titleold=Terminal`, so replace the annoying 'Thanks for flying vim' with 'Terminal' when exit vi
 6. enable mouse
 7. set *.md with markdown filetype
+8. add vimdiff shortcuts
+9. map ctrl-c / ctrl-v to copy / paste with system clipboard in Mac OSX
 
 ------------------------------------------------------------------------
 

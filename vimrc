@@ -36,8 +36,9 @@ au BufNewFile,BufRead *.md  set filetype=markdown
 au BufNewFile,BufRead *.mk  set filetype=markdown
 
 set history=1000
-" let delimitMate_autoclose = 0
-let delimitMate_offByDefault = 1
+"let delimitMate_autoclose = 0
+"let delimitMate_offByDefault = 1
+
 set titleold=Terminal
 if has("mouse")
     set mouse=a
@@ -62,4 +63,7 @@ elseif os == "Darwin"
 elseif os == "Linux"
     autocmd WinEnter,FileType c,cpp,java        colorscheme torte
 endif
-
+" vimdiff shortcuts
+map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
+map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
+map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
