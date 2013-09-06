@@ -1,0 +1,23 @@
+snippet link
+	[${1:description}](${2:url})${3}
+snippet image
+	![image](${1:image path})${2}
+# -----------------------------------------
+# personal usage in Farbox blog plugin
+# -----------------------------------------
+snippet blog Header
+	Title: ${1:Blog Title}
+	Date: `strftime("%Y-%m-%d %H:%M")`
+	Tags: ${2:Blog Tags}
+	Status: Draft
+
+	[TOC]
+	${3}
+snippet code Ruby
+	{% codeblock lang:rb %}
+	${1}
+	{% endcodeblock %}
+snippet code Python
+	{% codeblock lang:py %}
+	${1}
+	{% endcodeblock %}
