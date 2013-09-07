@@ -67,3 +67,6 @@ endif
 map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
 map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
 map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
+
+"not use vimwiki syntax in markdown file, only for .wiki file
+let g:vimwiki_ext2syntax = {'.wiki': 'media'}
