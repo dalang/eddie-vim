@@ -34,6 +34,10 @@ autocmd BufReadPost *
 " set *.md to Markdown filetype
 au BufNewFile,BufRead *.md  set filetype=markdown
 au BufNewFile,BufRead *.mk  set filetype=markdown
+"augroup markdown
+    "au!
+    "au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+"augroup END
 
 set history=1000
 "let delimitMate_autoclose = 0
@@ -70,3 +74,5 @@ map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
 
 "not use vimwiki syntax in markdown file, only for .wiki file
 let g:vimwiki_ext2syntax = {'.wiki': 'media'}
+"needed when using rbenv
+set shell=bash\ -i

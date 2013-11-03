@@ -27,5 +27,4 @@ autocmd! BufNewFile,BufRead nginx.conf set filetype=nginx
 autocmd! BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 
 " Markdown
-au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.md  set filetype=markdown
-
+au BufNewFile,BufRead *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*mk  set filetype=mkd

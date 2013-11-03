@@ -3,21 +3,16 @@ snippet link
 snippet image
 	![image](${1:image path})${2}
 # -----------------------------------------
-# personal usage in Octopress blog plugin
+# personal usage in Farbox blog plugin
 # -----------------------------------------
 snippet blog Header
-	---
-	layout: post
-	title: ${1:Blog Title}
-	date: `strftime("%Y-%m-%d %H:%M")`
-	comments: true
-	categories:
-	---
-	${2}
-snippet video Youtube
-	{% youtube ${1:video code} %}${2}
-snippet video Vimeo
-	{% vimeo ${1:video code} %}${2}
+	Title: ${1:Blog Title}
+	Date: `strftime("%Y-%m-%d %H:%M")`
+	Tags: ${2:Blog Tags}
+	Status: Draft
+
+	[TOC]
+	${3}
 snippet code Ruby
 	{% codeblock lang:rb %}
 	${1}
