@@ -114,3 +114,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<CR>
 " quick open vimrc in a new tab
 nmap <leader>v :tabe $MYVIMRC<CR>
 map <leader>0 :topleft 100 :split README.md<CR>
+
+" make c-w and c-u in insert mode can be undone
+inoremap <c-u> <c-g>u<c-u>
+inoremap <c-w> <c-g>u<c-w>
