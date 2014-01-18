@@ -11,7 +11,10 @@
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
-call pathogen#runtime_append_all_bundles()
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ["snipmate"]
+"call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 filetype plugin indent on
 call pathogen#infect()
 call pathogen#helptags()
