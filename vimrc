@@ -1,5 +1,5 @@
 " Customized by Dalang
-" http://dalang.tk
+" http://dalang.im
 " donGuoxing@gmail.com
 " --------------------------------------------------------------------
 " My currently working version Vimrc
@@ -71,6 +71,33 @@ endif
 map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
 map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
 map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
+
+" Goyo
+nnoremap <silent> <leader>g :Goyo<cr>
+function! g:goyo_before()
+  if has('gui_running')
+    set fullscreen
+    set background=light
+    set linespace=7
+  elseif exists('$TMUX')
+    silent !tmux set status off
+  endif
+  colorscheme seoul256
+endfunction
+
+function! g:goyo_after()
+  if has('gui_running')
+    set nofullscreen
+    set background=dark
+    set linespace=0
+  elseif exists('$TMUX')
+    silent !tmux set status on
+  endif
+  colorscheme rails_envy
+endfunction
+
+let g:goyo_callbacks = [function('g:goyo_before'), function('g:goyo_after')]
+
 
 "not use vimwiki syntax in markdown file, only for .wiki file
 let g:vimwiki_ext2syntax = {'.wiki': 'media'}

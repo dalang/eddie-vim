@@ -1,7 +1,7 @@
 snippet link
 	[${1:description}](${2:url})${3}
 snippet image
-	![image](${1:image path})${2}
+	![image](./Figures/${1:image path})${2}
 # -----------------------------------------
 # personal usage in Farbox blog plugin
 # -----------------------------------------
@@ -13,6 +13,10 @@ snippet blog Header
 
 	[TOC]
 	${3}
+snippet code ruby
+	\`\`\`ruby
+	${1}
+	\`\`\`
 snippet code Ruby
 	{% codeblock lang:rb %}
 	${1}
