@@ -47,9 +47,6 @@ set history=1000
 "let delimitMate_offByDefault = 1
 
 set titleold=Terminal
-if has("mouse")
-    set mouse=a
-endif
 imap <C-A> &#12288;&#12288;
 
 let os = substitute(system('uname'), "\n", "", "")

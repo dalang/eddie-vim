@@ -8,7 +8,6 @@ This vim setting forks from [eddie-vim](https://github.com/kaochenlong/eddie-vim
 1. `cmap w!! %!sudo tee > /dev/null %` and `Sudow to :w !sudo tee %`, for I always forget to prefix sudo to vi when edit system file
 1. ~~`let delimitMate_offByDefault = 1`. It will disable auto complete " [ and so on symbols at start vim , and we can use :DelimitMateSwitch to enable or disable auto complete.~~
 1. `set titleold=Terminal`, so replace the annoying 'Thanks for flying vim' with 'Terminal' when exit vi
-1. enable mouse
 1. set *.md with markdown filetype
 1. add vimdiff shortcuts
 1. map ctrl-c / ctrl-v to copy / paste with system clipboard in Mac OSX
