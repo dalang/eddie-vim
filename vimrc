@@ -11,8 +11,13 @@
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
-" To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ["snipmate"]
+
+let os = substitute(system('uname'), "\n", "", "")
+if os != "Darwin"
+    " To disable a plugin, add it's bundle name to the following list
+    let g:pathogen_disabled = ["snipmate"]
+endif
+
 "call pathogen#runtime_append_all_bundles()
 call pathogen#incubate()
 filetype plugin indent on
@@ -52,7 +57,6 @@ if has("mouse")
 endif
 imap <C-A> &#12288;&#12288;
 
-let os = substitute(system('uname'), "\n", "", "")
 if has("win32")
     autocmd WinEnter,FileType c,cpp,java        colorscheme desert
 elseif os == "Darwin"
