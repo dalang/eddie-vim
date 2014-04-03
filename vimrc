@@ -9,15 +9,6 @@
 " http://blog.eddie.com.tw
 " eddie@digik.com.tw
 
-"let g:airline_powerline_fonts=1
-"" old vim-powerline symbols
-"let g:airline_left_sep = '⮀'
-"let g:airline_left_alt_sep = '⮁'
-"let g:airline_right_sep = '⮂'
-"let g:airline_right_alt_sep = '⮃'
-"let g:airline_fugitive_prefix = '⭠'
-"let g:airline_readonly_symbol = '⭤'
-"let g:airline_linecolumn_prefix = '⭡'
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
 
