@@ -119,4 +119,19 @@ map <leader>0 :topleft 100 :split README.md<CR>
 inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
 
+
+" Vim Airline Support
+set laststatus=2
+set noshowmode
+
+" set font
 let g:Powerline_symbols = 'fancy'
+" vim-powerline symbols
+let g:airline_symbols = {}
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
