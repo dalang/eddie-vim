@@ -32,13 +32,27 @@ you can link your `~/.vimrc` to any one of them as you wish :)
 
 It's how my Vim looks now:
 
-![image](https://github.com/kaochenlong/eddie-vim/raw/master/screenshots/vim-2012-03-27-macvim.png)
+![image](https://github.com/kaochenlong/eddie-vim/raw/ruby/screenshots/vim-airline.png)
 
 and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> are some screenshots on the other platforms.
 
 ## Usage
 
 ### Installation and Requisites:
+
+#### Automatic installer... (DO YOU TRUST ME?)
+
+If you already install `git` in your machine, and you trust me and my automatic install shell script, you can install my vimrc via `curl` or `wget`, just copy one of the following line and paste in terminal:
+
+1. via `curl`:
+
+`sh <(curl -L https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh)`
+
+2. or via `wget`:
+
+`sh <(wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O -)`
+
+#### Manual installation
 
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
@@ -69,7 +83,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
         ln -s eddie-vim/gvimrc .gvimrc
 
-9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
+9. if you use Airline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/Lokaltog/powerline-fonts), patch the font and it should look pretty nice.
 
 10. you may need to install `ack` or `silver searcher` first if you use `ack.vim`.
 
@@ -85,9 +99,9 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
 3. some usually used key mappings in normal mode:
 
-    a. `<F1>` to toggle a Calendar window on and off.
+    a. `<F2>` to toggle NERDTree on and off.
 
-    b. `<F2>` to toggle NERDTree on and off.
+    b. `<F3>` to search Buffer with CtrlP plugin.
 
     c. `<F4>` to toggle Taglist window.
 
