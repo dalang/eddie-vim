@@ -130,8 +130,17 @@ let g:Powerline_symbols = 'fancy'
 let g:airline_symbols = {}
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
+let g:airline_right_sep = ''
 let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
+
+" vim-tmuxline
+let g:airline#extensions#tmuxline#enabled = 0
+let g:tmuxline_separators = {
+    \ 'left' : '⮀',
+    \ 'left_alt': '⮁',
+    \ 'right' : '⮂',
+    \ 'right_alt' : '⮃',
+    \ 'space' : ' '}
