@@ -100,3 +100,6 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = git@github.com:garbas/vim-snipmate.git
+[submodule "vim-tmuxline"]
+	path = vim-tmuxline
+	url = https://github.com/edkolev/tmuxline.vim
