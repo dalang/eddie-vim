@@ -15,7 +15,7 @@ filetype off
 let os = substitute(system('uname'), "\n", "", "")
 if os != "Darwin"
     " To disable a plugin, add it's bundle name to the following list
-    let g:pathogen_disabled = ["snipmate", "vim-tmuxline"]
+    let g:pathogen_disabled = ["snipmate", "vim-instant-markdown", "vim-tmuxline"]
 endif
 
 "call pathogen#runtime_append_all_bundles()
