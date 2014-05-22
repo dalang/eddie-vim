@@ -100,3 +100,6 @@
 [submodule "bundle/vim-tmuxline"]
 	path = bundle/vim-tmuxline
 	url = https://github.com/edkolev/tmuxline.vim
+[submodule "bundle/vim-instant-markdown"]
+	path = bundle/vim-instant-markdown
+	url = https://github.com/suan/vim-instant-markdown.git
