@@ -85,8 +85,8 @@
 [submodule "bundle/delimitMate"]
   path = bundle/delimitMate
   url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/vim-insant-markdown"]
-	path = bundle/vim-insant-markdown
+[submodule "bundle/vim-instant-markdown"]
+	path = bundle/vim-instant-markdown
 	url = https://github.com/suan/vim-instant-markdown.git
 [submodule "bundle/puppet"]
 	path = bundle/puppet
